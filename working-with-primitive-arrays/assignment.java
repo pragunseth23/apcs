@@ -22,4 +22,8 @@ class Main {
             x[i] = i + 1;
         }
     }
+    /*
+     * When the function ends, the array in SPVM has changed as when the same array
+     * is printed after the function is called, the values are different.
+     */
 }
