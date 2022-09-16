@@ -24,6 +24,7 @@ import arraylist.MyArrayList;
  * toLogicalString()
  * Displays all of the elements in the "Array" excluding null placeholder values
  */
+
 class Main {
     public static void main(String[] args) {
         MyArrayList<String> arr = new MyArrayList<>();
