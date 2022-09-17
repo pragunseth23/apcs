@@ -27,7 +27,10 @@ import arraylist.MyArrayList;
 
 class Main {
     public static void main(String[] args) {
-        MyArrayList<String> arr = new MyArrayList<>();
+        /*
+         * Test 1
+         */
+        MyArrayList<String> arr = new MyArrayList<String>();
         arr.add("1");
         arr.add("2");
         arr.add("3");
@@ -37,9 +40,19 @@ class Main {
         System.out.println(arr.indexOf("test"));
         System.out.println(arr.toString());
         System.out.println(arr.toLogicalString());
-
+        /*
+         * Test 2
+         */
+        MyArrayList<Integer> test = new MyArrayList<Integer>();
+        test.add(23);
+        System.out.println(test.indexOf(23));
+        System.out.println(test.toLogicalString());
     }
 }
+
+/*
+ * MyArrayList code
+ */
 
 class MyArrayList<E> {
     private Object[] list = new Object[2];
@@ -118,24 +131,22 @@ class MyArrayList<E> {
         return indexNum;
     }
 
-    @SuppressWarnings("unchecked")
     public String toString() {
-        String answer = "[ ";
-        for (E i : (E[]) list) {
-            answer += (i + ", ");
-        }
-        answer += "]";
-        return answer;
+        return Arrays.toString(list);
     }
 
     public String toLogicalString() {
-        String answer = "[ ";
-        for (int i = 0; i < list.length; i++) {
+        StringBuilder answer = new StringBuilder();
+        answer.append("[");
+        if (list[0] != null) {
+            answer.append(list[0]);
+        }
+        for (int i = 1; i < list.length; i++) {
             if (list[i] != null) {
-                answer += (list[i] + ", ");
+                answer.append(", " + list[i]);
             }
         }
-        answer += "]";
-        return answer;
+        answer.append("]");
+        return answer.toString();
     }
 }
