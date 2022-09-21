@@ -1,7 +1,6 @@
 package arraylist;
 
 import java.util.*;
-import arraylist.MyArrayList;
 
 /*
  * Methods:
