@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Main {
+class assignment {
     public static void main(String[] args) {
         Car[] arr = new Car[7];
         Car tesla = new Car("Tesla", 120000);
