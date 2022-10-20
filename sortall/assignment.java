@@ -2,6 +2,7 @@ package sortall;
 
 class assignment {
     public static void main(String[] args) {
+        @SuppressWarnings("all")
         Comparable[] letters = { "X", "Y", "Z", "A", "D", "C", "B", };
 
         SortAll.bubbleSort(letters);

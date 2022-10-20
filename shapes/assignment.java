@@ -9,6 +9,8 @@ public class assignment {
 
         System.out.println(c.compareTo(c1));
         System.out.println(c.compareTo(c2));
+        c.setNum(17);
+        System.out.println(c.getNum());
 
     }
 }

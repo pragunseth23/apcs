@@ -16,4 +16,12 @@ public class Square extends Shape {
         int diff = (int) (this.calcArea() - o.calcArea());
         return diff;
     }
+
+    public void setNum(int num) {
+        super.setNum(num);
+    }
+
+    public int getNum() {
+        return super.getNum();
+    }
 }

@@ -1,7 +1,6 @@
 package sortall;
 
-import java.util.*;
-
+@SuppressWarnings("all")
 public class SortAll {
   public static void bubbleSort(Comparable[] arr) {
     for (int i = 0; i < arr.length - 1; i++) {
