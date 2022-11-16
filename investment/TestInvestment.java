@@ -38,6 +38,9 @@ public class TestInvestment {
         // Print Details of the Mutual Fund
         System.out.println(I[1].getName() + " " + I[1].getSsn() + " " +
                 I[1].getValue());
+        System.out.println(I[0].toString());
+        System.out.println(I[1].toString());
+        System.out.println(I[2].toString());
 
     }
 }

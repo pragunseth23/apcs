@@ -18,7 +18,7 @@ public class CD extends Investment {
 
     public void calcValue() {
         double value = this.amount * (this.term * (this.rate / 360));
-        this.value = value;
+        setValue(value);
     }
 
 }
